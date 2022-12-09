@@ -6,7 +6,7 @@ import {
   changeFieldValue,
   resetForm,
   editItemList,
- } from "../../actions/actionCreators";
+} from "../../actions/actionCreators";
 import { useDispatch, useSelector } from "react-redux";
 
 const USID = require("usid");
@@ -38,11 +38,11 @@ const Form = (data) => {
     event.preventDefault();
     const { name, value } = event.target;
     dispatch(changeFieldValue(name, value));
-   
   };
 
   const onClickCancel = (event) => {
     event.preventDefault();
+
     dispatch(resetForm());
   };
 
@@ -75,13 +75,14 @@ const Form = (data) => {
             {id && (
               <Button
                 key={usid.rand()}
-                type={type + "-form-cancel__btn"}
+                type={"button"}
                 text={"Cancel"}
-                onClickHandler={onClickCancel}
+                onClick={onClickCancel}
               />
             )}
           </div>
         </form>
+
         <Text
           ref={tooltipeRef}
           key={usid.rand()}
@@ -92,8 +93,6 @@ const Form = (data) => {
     </React.Fragment>
   );
 };
-
-
 
 export default Form;
 

@@ -36,7 +36,11 @@ export const Button = React.forwardRef((props, ref) => {
         ref={ref}
         id={props.id}
         className={props.type}
-        onClick={props.clickHandler ? () => props.clickHandler(props.id) : null}
+        onClick={
+          props.clickHandler
+            ? () => props.clickHandler(props.id)
+            : props.onClick
+        }
         style={props.btnStyle}
       >
         {props.text}

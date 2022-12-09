@@ -40,3 +40,6 @@
 Напоминаем, что фильтр — это просто текстовое поле.
 
 **Важно**: попробуйте проанализировать существующие системы на предмет того, как это реализовано у них, и на базе этого предложить собственное решение.
+
+---
+[![Build status](https://ci.appveyor.com/api/projects/status/s1pp5arqtlyds64t/branch/main?svg=true)](https://ci.appveyor.com/project/222Alexa44925/ra-redux/branch/main)
